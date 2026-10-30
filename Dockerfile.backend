@@ -9,20 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy backend and engine dependencies
-COPY starter_kit/DocuDiff_AI_Colab_Kit/requirements.txt /tmp/colab_reqs.txt
+COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir \
-    fastapi \
-    uvicorn \
-    python-multipart \
-    pydantic \
-    pydantic-settings \
-    sentence-transformers \
-    faiss-cpu \
-    pymupdf \
-    python-docx \
-    langgraph \
-    torch --extra-index-url https://download.pytorch.org/whl/cpu
+    pip install --no-cache-dir -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Copy application code
 COPY backend /app/backend

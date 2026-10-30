@@ -32,15 +32,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi.staticfiles import StaticFiles
+
 app.include_router(api_router, prefix=settings.API_V1_PREFIX)
 
-@app.get("/")
-def root():
-    return {
-        "message": "Welcome to DocuDiff AI API",
-        "health_check": f"{settings.API_V1_PREFIX}/health",
-        "documentation": "/docs"
-    }
+# If production frontend build exists, serve it seamlessly
+FRONTEND_DIST = BASE_DIR.parent / "frontend" / "dist"
+if FRONTEND_DIST.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_DIST), html=True), name="frontend")
+else:
+    @app.get("/")
+    def root():
+        return {
+            "message": "Welcome to DocuDiff AI API",
+            "health_check": f"{settings.API_V1_PREFIX}/health",
+            "documentation": "/docs"
+        }
 
 if __name__ == "__main__":
     import uvicorn
