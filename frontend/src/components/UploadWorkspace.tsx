@@ -247,7 +247,6 @@ Emergency access requests require manager approval.`;
             >
               <option value="deterministic">Deterministic Rule Engine (Fast & 100% Reliable Offline)</option>
               <option value="gemini">Gemini API (Hosted LLM — gemini-2.0-flash-lite / 1.5-flash)</option>
-              <option value="qwen">Local Qwen (Offline LLM)</option>
             </select>
           </div>
 
