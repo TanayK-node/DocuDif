@@ -1,0 +1,6 @@
+Employee Leave Policy
+Employees may carry forward up to 15 days of unused leave.
+A leave request must be submitted at least 7 days before planned travel.
+The system should retain access logs for 30 days.
+Access is permitted for approved administrators only.
+Unused medical leave is not transferable.

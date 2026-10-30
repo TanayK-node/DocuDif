@@ -1,0 +1,528 @@
+{
+  "total_cases": 35,
+  "type_accuracy_pct": 100.0,
+  "priority_accuracy_pct": 88.57,
+  "category_accuracy_pct": 77.14,
+  "detailed_results": [
+    {
+      "case_id": "CASE-001",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-002",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-003",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Meaning or obligation changed",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-004",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Permission, role or access-scope changed",
+      "pred_category": "Permission, role or access-scope changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_PERMISSION_SCOPE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-005",
+      "gt_type": "added",
+      "pred_type": "added",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Condition, approval or process changed",
+      "pred_category": "Condition, approval or process changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_APPROVAL_ADDED"
+      ]
+    },
+    {
+      "case_id": "CASE-006",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-007",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-008",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-009",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-010",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_DATE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-011",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "critical",
+      "pred_priority": "critical",
+      "priority_match": true,
+      "gt_category": "Negation or exception changed",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE",
+        "RULE_NEGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-012",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "critical",
+      "pred_priority": "critical",
+      "priority_match": true,
+      "gt_category": "Negation or exception changed",
+      "pred_category": "Negation or exception changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NEGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-013",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Meaning or obligation changed",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-014",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Meaning or obligation changed",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-015",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Permission, role or access-scope changed",
+      "pred_category": "Permission, role or access-scope changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_PERMISSION_SCOPE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-016",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Permission, role or access-scope changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE",
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-017",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "critical",
+      "pred_priority": "critical",
+      "priority_match": true,
+      "gt_category": "Negation or exception changed",
+      "pred_category": "Negation or exception changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NEGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-018",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE",
+        "RULE_DATE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-019",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE",
+        "RULE_DATE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-020",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-021",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "low",
+      "priority_match": false,
+      "gt_category": "Condition, approval or process changed",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": false,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-022",
+      "gt_type": "removed",
+      "pred_type": "removed",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Added requirement / removed requirement",
+      "pred_category": "Added requirement / removed requirement",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE",
+        "RULE_APPROVAL_REMOVED"
+      ]
+    },
+    {
+      "case_id": "CASE-023",
+      "gt_type": "added",
+      "pred_type": "added",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Added requirement / removed requirement",
+      "pred_category": "Added requirement / removed requirement",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE",
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-024",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-025",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-026",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-027",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "high",
+      "priority_match": false,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-028",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "high",
+      "priority_match": false,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-029",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Condition, approval or process changed",
+      "pred_category": "Permission, role or access-scope changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_PERMISSION_SCOPE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-030",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-031",
+      "gt_type": "unchanged",
+      "pred_type": "unchanged",
+      "type_match": true,
+      "gt_priority": "low",
+      "pred_priority": "low",
+      "priority_match": true,
+      "gt_category": "Wording-only / no material meaning change",
+      "pred_category": "Wording-only / no material meaning change",
+      "category_match": true,
+      "rules_triggered": []
+    },
+    {
+      "case_id": "CASE-032",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "critical",
+      "priority_match": false,
+      "gt_category": "Condition, approval or process changed",
+      "pred_category": "Permission, role or access-scope changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_PERMISSION_SCOPE_CHANGE",
+        "RULE_NEGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-033",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-034",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "critical",
+      "pred_priority": "critical",
+      "priority_match": true,
+      "gt_category": "Negation or exception changed",
+      "pred_category": "Meaning or obligation changed",
+      "category_match": false,
+      "rules_triggered": [
+        "RULE_MODAL_OBLIGATION_CHANGE",
+        "RULE_NEGATION_CHANGE"
+      ]
+    },
+    {
+      "case_id": "CASE-035",
+      "gt_type": "modified",
+      "pred_type": "modified",
+      "type_match": true,
+      "gt_priority": "high",
+      "pred_priority": "high",
+      "priority_match": true,
+      "gt_category": "Numeric, date or duration changed",
+      "pred_category": "Numeric, date or duration changed",
+      "category_match": true,
+      "rules_triggered": [
+        "RULE_NUMERIC_CHANGE",
+        "RULE_DATE_CHANGE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies for PyMuPDF and build tools
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy backend and engine dependencies
+COPY starter_kit/DocuDiff_AI_Colab_Kit/requirements.txt /tmp/colab_reqs.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir \
+    fastapi \
+    uvicorn \
+    python-multipart \
+    pydantic \
+    pydantic-settings \
+    sentence-transformers \
+    faiss-cpu \
+    pymupdf \
+    python-docx \
+    langgraph \
+    torch --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Copy application code
+COPY backend /app/backend
+COPY ai-engine /app/ai-engine
+COPY samples /app/samples
+
+ENV PYTHONPATH=/app/backend:/app/backend/app:/app/ai-engine
+ENV DOCUDIFF_LLM_PROVIDER=deterministic
+
+EXPOSE 8000
+
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
